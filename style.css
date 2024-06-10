@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#190361 0%, #BB00FF 100%);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    width: min(42.8rem, 90%);
+}
+    
+div {
+    background-color: white;
+    border-radius: 5px; 
+}
+
+.screen1 img:hover {
+    cursor: pointer;
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+}
+
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 4.8rem;
+}
+
+.screen1 p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+.screen1 img {
+    display: block;
+    margin: auto;
+    padding-bottom: 4.8rem;
+}
+
+.screen2 {
+    padding-bottom: 4.8rem;
+}
+
+.screen2 > p {
+    width: 29.3rem;
+    padding: 1rem;
+    margin: 1.7rem auto auto;
+
+    background-color: #E4EDF1;
+    box-shadow: 2px 2px 3px #55555590;
+
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 2.4rem;
+
+    animation: toFadeIn .5s ;
+}
+
+.screen2 > h1 {
+    padding-top: 4.8rem;
+    text-align: center;
+}
+
+.screen2 > img {
+    display: block;
+    margin: auto;
+}
+
+img {
+    width: 30rem;
+}
+
+button {
+    font-family: "DM Sans", sans-serif;
+    width: 17.4rem;
+    height: 5.2rem;
+    
+    display: block;
+    margin: auto;
+    
+
+    background-color: #FF9500;
+    color: white;
+    border-radius: .4rem;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes toFadeIn {
+    0% {
+      transform:
+      translateY(150px)
+      scale(0.1);
+
+    }
+
+    100% {
+      transform:
+      translateY(0px)
+      scale(1);
+    }
+  }
