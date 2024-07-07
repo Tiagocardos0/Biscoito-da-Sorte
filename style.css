@@ -119,6 +119,15 @@ button {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+
+    .screen1 img {
+        cursor: pointer;
+        animation: shake .5s;
+        animation-iteration-count: infinite;
+    }
+}
+
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
